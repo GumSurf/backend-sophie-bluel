@@ -15,6 +15,8 @@ const normalizePort = val => {
 const port = normalizePort(process.env.PORT ||'5678');
 app.set('port', port);
 
+console.log("Port =", port);
+
 const errorHandler = error => {
 	if (error.syscall !== 'listen') {
 		throw error;
