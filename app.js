@@ -1,4 +1,4 @@
-/*const express = require('express');
+const express = require('express');
 const path = require('path');
 const cors = require('cors')
 require('dotenv').config();
@@ -27,9 +27,9 @@ app.get('/', (req, res) => {
 app.use('/api/users', userRoutes);
 app.use('/api/categories', categoriesRoutes);
 app.use('/api/works', worksRoutes);
-module.exports = app;*/
+module.exports = app;
 
-const express = require('express');
+/*const express = require('express');
 
 const app = express();
 
@@ -49,4 +49,4 @@ app.use((req, res, next) => {
     res.json({ message: "UPDATE !" }); 
  });
 
-module.exports = app;
+module.exports = app;*/
