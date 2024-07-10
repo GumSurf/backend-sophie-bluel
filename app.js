@@ -17,7 +17,7 @@ app.use((req, res, next) => {
     next();
   });
 
-/*app.use(cors())
+app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(helmet({
@@ -36,10 +36,6 @@ app.get('/', (req, res) => {
   });
 app.use('/api/users', userRoutes);
 app.use('/api/categories', categoriesRoutes);
-app.use('/api/works', worksRoutes);*/
-
-app.use((req, res) => {
-    res.json({ message: "UPDATE !" }); 
- });
+app.use('/api/works', worksRoutes);
 
 module.exports = app;
