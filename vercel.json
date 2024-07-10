@@ -1,10 +1,18 @@
 {
     "version": 2,
-    "name": "Sophie Bluel Backend",
     "builds": [
-      { "src": "server.js", "use": "@vercel/node" }
+        {
+            "src": "./server.js",
+            "use": "@vercel/node"
+        }
     ],
     "routes": [
-      { "src": "/(.*)", "dest": "/server.js" }
+        {
+            "handle": "filesystem"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/"
+        }
     ]
 }
